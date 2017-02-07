@@ -1,7 +1,10 @@
+html {
+  /*background-image: url("images/background.jpg");*/
+}
 body {
   background-color: black;
   color: white;
-  width: 70%;
+  width: 80%;
   margin: 0 auto;
   margin-bottom: 0;
 }
@@ -12,6 +15,9 @@ header img {
   width: 100%;
 }
 h1 {
+  color: red;
+}
+h3 {
   color: red;
 }
 aside {
@@ -44,12 +50,36 @@ aside li:hover h3 {
 li {
   list-style-type: none;
 }
+main {
+  padding-left: 10%;
+  width: 10%:
+}
 main p {
   padding-left: 30%;
+}
+main img {
+  padding-left: 4%;
 }
 #tina {
   padding-left: 30%;
 }
 .mySlides {
   position: absolute;
+}
+#hour {
+  padding-right: 5%;
+  color: red;
+  float: right;
+  margin-top: 0;
+}
+#hours {
+  color: red;
+  float: right;
+  text-align: center;
+  width: 15%;
+  padding-top: 0;
+  margin-top: 0;
+}
+footer {
+  text-align: center;
 }
