@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Little Darlings Kiddie and Adult Salon</title>
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slideshow.css">
+    <script>
+      var slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+      }
+    </script>
+  </head>
+  <body>
+    <header>
+      <img src="images/lilD.jpg" >
+    </header>
+    <aside>
+      <ul>
+        <li><a href="index.html"><h3>Home</h3><img src="images/aside/home.png"></a></li>
+        <li><a href="stylists.html"><h3>Stylists</h3><img src="images/aside/stylit.png"></a></li>
+        <li><a href="hairstyles.html"><h3>Services</h3><img src="images/aside/hairstyles.png"></a></li>
+        <li><a href="stylists.html"><h3>Stylists</h3><img src="images/aside/location.png"></a></li> <!--amenities?-->
+      </ul>
+    </aside>
+    <main>
+      <h1>Hairstyles</h1>
+      <p>Every style is accompanied with a wash and blowdry</p>
+      <div class="slideshow-container">
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+            <img src="images/braids.jpg" style="width:30%">
+          <div class="text">Braids</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="images/front.jpg" style="width:30%">
+          <img src="images/back.jpg" style="width:30%">
+          <div class="text">Braids and Flat iron</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images/straight.jpg" style="width:30%">
+          <div class="text">Flat ironed</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </main>
+    <map>
+    <footer>
+    </footer>
+  </body>
+</html>

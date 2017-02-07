@@ -1,0 +1,55 @@
+body {
+  background-color: black;
+  color: white;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+header {
+  display: inline;
+}
+header img {
+  width: 100%;
+}
+h1 {
+  color: red;
+}
+aside {
+  float: left;
+  position: static;
+  padding-top: 0;
+  padding-right: 10px;
+}
+aside a {
+  text-decoration: none;
+  color: red;
+}
+aside h3 {
+  position: absolute;
+  text-align: center;
+  padding-left: 35%;
+  opacity: 0;
+}
+aside li {
+  position: relative;
+  list-style-type: none;
+  opacity: 0.5;
+}
+aside li:hover {
+  opacity: 1;
+}
+aside li:hover h3 {
+  opacity: 1;
+}
+li {
+  list-style-type: none;
+}
+main p {
+  padding-left: 30%;
+}
+#tina {
+  padding-left: 30%;
+}
+.mySlides {
+  position: absolute;
+}
