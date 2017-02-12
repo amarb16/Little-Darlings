@@ -3,11 +3,13 @@ h1 {
 }
 p {
   text-align: center;
-  padding: 0;
+  padding-left: 20%;
+}
+form, h2 {
+  text-align: center;
 }
 #googleMap {
-  padding-left: 5%;
   text-align: center;
-  padding-right: 5%;
   width: 100%;
+  padding-left: 15%;
 }
