@@ -93,3 +93,13 @@ div img {
   padding-left: 50%;
   display: inline;
 }
+.mySlides {
+  position: absolute;
+}
+
+/*  video  */
+iframe {
+  display: center;
+  padding-left: 20%;
+  padding-top: 100px;
+}

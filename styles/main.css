@@ -4,16 +4,18 @@ html {
 body {
   background-color: black;
   color: white;
-  width: 80%;
+  width: 90%;
   margin: 0 auto;
-  margin-bottom: 0;
   border: 7px double red;
 }
 header {
   display: inline;
+  border-bottom: 3px solid red;
 }
 header img {
   width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 h1 {
   color: red;
@@ -21,13 +23,19 @@ h1 {
 h3 {
   color: red;
 }
+
+/*  aside  */
 aside {
   float: left;
   position: static;
   padding-top: 0;
   padding-right: 10px;
-  padding-left: 0;
-  margin-left: 0;
+}
+aside img {
+  width: 80%;
+}
+aside a:active {
+  opacity: 1;
 }
 aside a {
   text-decoration: none;
@@ -35,14 +43,26 @@ aside a {
   padding-left: 0;
   margin-left: 0;
 }
+.currentLink {
+  opacity: 1;
+  border-left: 7px solid red;
+}
+.currentLink h3 {
+  opacity: 1;
+}
 aside h3 {
   position: absolute;
   text-align: center;
-  padding-left: 35%;
+  padding-left: 10%;
   opacity: 0;
   margin-left: 0;
 }
+aside ul {
+  padding-left: 0;
+}
 aside li {
+  padding-left: 0;
+  margin-left: 0;
   position: relative;
   list-style-type: none;
   opacity: 0.5;
@@ -53,39 +73,43 @@ aside li:hover {
 aside li:hover h3 {
   opacity: 1;
 }
+
 li {
   list-style-type: none;
 }
-main {
-  padding-left: 10%;
-  width: 10%:
-}
+
+/*  main  */
 main p {
-  padding-left: 30%;
+  width: 90%;
+}
+main {
+  width: 90%;
 }
 main img {
   padding-left: 4%;
 }
-#tina {
-  padding-left: 30%;
-}
-.mySlides {
-  position: absolute;
-}
-#hour {
-  padding-right: 5%;
-  color: red;
-  float: right;
-  margin-top: 0;
-}
-#hours {
+
+
+/*  sidebar  */
+sidebar {
   color: red;
   float: right;
   text-align: center;
   width: 15%;
-  padding-top: 0;
+  padding-top: 10%;
+}
+sidebar p {
   margin-top: 0;
 }
+
+/*  footer  */
 footer {
   text-align: center;
+  background-color: red;
+  width: 100%;
+}
+footer p {
+  padding-top: 10px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
